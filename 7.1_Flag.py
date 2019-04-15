@@ -12,13 +12,14 @@ The record is 16! You will have to use some loops to achieve this.
 
 import arcade
 
-arcade.open_window(500, 500, "Star Wars Art")
+arcade.open_window(500, 500, "American Flag")
 arcade.set_background_color(arcade.color.WHITE)
 
 arcade.start_render()
-'''
 
-'''
+arcade.draw_rectangle_filled(100, 420, 150, 100, (0, 40, 104))
+
+
 arcade.finish_render()
 
 arcade.run()
