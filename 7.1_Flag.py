@@ -12,13 +12,16 @@ The record is 16! You will have to use some loops to achieve this.
 
 import arcade
 
+#Height of flag 260 pixels, Fly of flag 494 pixels
+
 arcade.open_window(500, 500, "American Flag")
 arcade.set_background_color(arcade.color.WHITE)
 
 arcade.start_render()
 
 arcade.draw_rectangle_filled(100, 420, 150, 100, (0, 40, 104))
-
+for x_offset in range(0, 200, 20):
+    arcade.draw_rectangle_filled(0+x_offset, 60, 10, 30, (0, 40, 104))
 
 arcade.finish_render()
 
