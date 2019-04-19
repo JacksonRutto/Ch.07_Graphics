@@ -27,8 +27,9 @@ for x_offset in range(0, 250, 40):          #Stripes
 arcade.draw_rectangle_filled(94, 200, 182, 140, (0, 40, 104))   #Union
 #
 
-for x_offset in range()
-
+for x_offset in range(90, 220, 28):
+    arcade.draw_text("*   *   *   *   *   *", 10, 40+x_offset, arcade.color.BLACK, 20)
+    arcade.draw_text("*   *   *   *   *", 10, 40+x_offset, arcade.color.BLACK, 20)
 arcade.finish_render()
 
 arcade.run()
