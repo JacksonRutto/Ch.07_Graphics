@@ -8,4 +8,9 @@ The picture is 500px wide and 400px tall. Look up ARC in the documentation to do
 '''
 
 
-import random
+import arcade
+
+arcade.open_window(500, 500, "Take Home Test")
+arcade.set_background_color(arcade.color.WHITE)
+
+arcade.start_render()
