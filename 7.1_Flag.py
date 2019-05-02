@@ -18,21 +18,15 @@ import arcade
 
 arcade.open_window(500, 500, "American Flag")       #Background
 arcade.set_background_color(arcade.color.WHITE)
-
 arcade.start_render()
-
 for x_offset in range(0, 250, 40):          #Stripes
     arcade.draw_rectangle_filled(250, 20+x_offset, 20, 494, (191, 10, 48), 90)
-
 arcade.draw_rectangle_filled(94, 200, 182, 140, (0, 40, 104))   #Union
-#
-
 for x_offset in range(90, 210, 28):         #Stars
     arcade.draw_text("*   *   *   *   *   *", 10, 40+x_offset, arcade.color.WHITE, 20)
 for x_offset in range(90, 200, 28):
     arcade.draw_text("*   *   *   *   *", 25, 55+x_offset, arcade.color.WHITE, 20)
 arcade.finish_render()
-
 arcade.run()
 
 

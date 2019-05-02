@@ -17,6 +17,8 @@ arcade.start_render()
 
 for x_offset in range(0, 400, 20):
     arcade.draw_line(0, 0+x_offset, 500, 0+x_offset, arcade.color.BLACK, 1)
+for x_offset in range(0, 400, 20):
+    arcade.draw_line(0+x_offset, 0, 0+x_offset, 400, arcade.color.BLACK, 1)
 
 
 arcade.finish_render()
