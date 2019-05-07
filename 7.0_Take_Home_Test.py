@@ -15,12 +15,14 @@ arcade.set_background_color(arcade.color.ALMOND)
 
 arcade.start_render()
 
-for x_offset in range(0, 400, 20):
+for x_offset in range(0, 400, 20):      #Horizontal lines
     arcade.draw_line(0, 0+x_offset, 500, 0+x_offset, arcade.color.BLACK, 1)
-for x_offset in range(0, 400, 20):
-    arcade.draw_line(0+x_offset, 0, 0+x_offset, 400, arcade.color.BLACK, 1)
 
+for x_offset in range(0, 400, 20):      #Vertcal lines
+    arcade.draw_line(0+x_offset, 0, 0+x_offset, 500, arcade.color.BLACK, 1)
 
+arcade.draw_rectangle_filled(250, 250, 45, 25, arcade.color.BLUSH, 45)
+arcade.draw_rectangle_filled(51, 370, 61, 23, arcade.color.PHLOX)
 arcade.finish_render()
 
 arcade.run()
