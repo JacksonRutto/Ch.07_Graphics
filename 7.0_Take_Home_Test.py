@@ -35,6 +35,7 @@ arcade.draw_circle_filled(250, 200, 40, arcade.color.WISTERIA)
 
 arcade.draw_ellipse_filled(100, 100, 60, 20, arcade.color.AMBER)
 
+arcade.draw_arc_filled(400, 320, 60, 60, arcade.color.YELLOW, 30, 330)
 
 arcade.finish_render()
 
